@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="achive.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="quality.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "v-JVTtwbrE-1gSvKk",
+      });
+   })();
+
+   
+</script>
+</head>
+<body onclick="removeemail()">  <div class="hero">
+    <nav>
+
+        <div class="logo">
+            LOGO
+        </div>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>About us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="user ">
+            User Name
+        </div>
+    </nav>
+    <br>
+    <section>
+        <div class="left">
+            <h1 style="font-size: 70px;">Revitalize Your Clothes with Expert</h1>
+            <h1 id="bluhd"style="font-size: 70px;">Laundry Services!</h1><br><br>
+            <p>Experience complete garment care designed around your busy lifestyle.
+                Our premium dry cleaning process effectively removes deep-set stains and odors while preserving the quality of your garments. For daily essentials, our professional wash-and-fold service ensures clothes are thoroughly cleaned, neatly folded, and ready to wear.
+</p>    <br><br>
+        <a class="button" type="submit" href="#service">Book a Service Today</a>
+        
+        </div>
+        <div class="right">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/026/721/193/small/washing-machine-and-laundry-laundry-sticker-png.png" height="400" alt="">
+        </div>
+
+    </section>
+    
+    <footer class="foot">
+        <div class="achi">Our Achivement</div>
+        <div class="data">
+            <div class="div"><b>5O+</b><br><i>Laundry Service</i></div>
+            <div class="div"><b>24O+</b><br><i>Happy Customer</i></div>
+            <div class="div"><b>2+ Yrs</b><br><i>Experience</i></div>
+        </div>
+    </footer>
+
+    </div>
+<!-- =======================TASK========================= -->
+ <br><br>
+<section id="service">
+    <br>
+    <div class="conti">
+        <div class="boxt">
+            <h1>Our service</h1>
+            <br> <p >Click on the To Cart Button To Add Service To Your Cart <br></p><br><hr>
+            <br>
+            <div class="serv">
+                <div class="ops"><div id="dc">👕 Dry cleaning -</div><div id="price">200.00</div><div>   <button class="cartbtn" onclick="additem(this)" >Add Item ➕</button></div></div>
+                <div class="ops"><div id="dc">💦 Wash & Fold -</div><div id="price">100.00</div><div>    <button class="cartbtn" onclick="additem(this)">Add Item ➕</button></div></div>
+                <div class="ops"><div id="dc">👔 Ironing - </div><div id="price">30.00</div><div>        <button class="cartbtn" onclick="additem(this)">Add Item ➕</button></div></div>
+                <div class="ops"><div id="dc">🧽 Stain Removal - </div><div id="price">500.00</div><div>  <button class="cartbtn" onclick="additem(this)">Add Item ➕</button></div></div>
+                <div class="ops"><div id="dc">🧥 Lether & Suede Cleaning - </div><div id="price">900.00</div><div><button class="cartbtn" onclick="additem(this)">Add Item ➕</button></div></div>
+                <div class="ops"><div id="dc">👗 Wedding Dress Cleaning- </div><div id="price">2800.00</div><div>  <button class="cartbtn" onclick="additem(this)">Add Item ➕</button></div></div>
+            <hr>
+            <p class="line">Add the items to the cart and book now</p>
+            </div>
+            
+        </div>
+<!-- ============================================================================================ -->
+      
+<div class="calc">
+            <div class="item">
+                <div style="display: grid; gap: 9px;">
+                <h1 style="text-align: center;">Added items</h1>
+                
+                <table border="1">
+                    <thead class="thead">
+                        <tr >
+                        <th>Sl no.</th>
+                        <th>Service Name</th>
+                        <th>Price</th>
+                    </tr>
+                    </thead>
+                    <tbody class="tbody" id="tbody">
+
+                    </tbody>
+                    
+                </table>
+               </div>
+               
+               <div style="display: flex; justify-content: space-around;">
+                <h3>Total Amount:</h3>
+                <p id="total"></p>
+               </div>
+
+               <!-- book now -->
+            </div>
+            <div class="book"><br>
+                <h1>Book Now</h1><br>
+                <hr><br>
+                <form class="form" action="">
+                    <label id="fn" > Full Name <br>
+                    <input class="name" id="fmname" name="pname" type="text" size="30" placeholder="John Doe" required></label>
+                    <label id="ei">Email ID <br>
+                    <input class="email" id="fmeml" type="email" size="30" placeholder="abc@gmail.com" required></label>
+                     <label id="pn">Phone no. <br>
+                     <input class="ph" id="fmph" type="text" size="10" placeholder="1234567890" required></label>
+                         <button type="button" class="bookbtn" onclick="sendEmail()">Book now</button>
+                    </form><br><br>
+                <p id="alert"></p><br>
+            </div>
+           
+        </div>
+        
+    </div>  
+</section>
+<script src="email.js"></script>  
+<script>
+    function removeemail(){    if(document.getElementById("alert").innerText!=""){
+        document.getElementById("alert").innerText="";
+    }}
+</script>
+<script src="item.js"></script>
+
+<!-- quality desc -->
+ <section class="quality">
+    <div class="desc"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIZbWs766DGW3MHRUi1VNpYg6Hw8ZuqxshZQ&s" alt="icon"style="border-radius: 50%; height: 100px; width: 100px;"><h3>Premium Services</h3><div class="text"><h3>Quick Support</h3><div class="text"></div>Elevate your wardrobe with our meticulous dry cleaning, ensuring garments look and feel as good as new.</div></div>
+    <div class="desc"><img src="https://cdn-icons-png.flaticon.com/512/4230/4230745.png" alt="img2" style="border-radius: 50%; height: 100px; width: 100px; ;"><h3>Quick Support</h3><div class="text">We're committed to providing prompt solutions to ensure your experience is smooth and worry-free</div></div>
+    <div class="desc"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTplmjtxAkrrFxay4y3DQcIQVh9L64yikA3w&s" alt="img3" style="border-radius: 50%; height: 100px; width: 100px; ;"><h3>Hassle Free Delivery</h3><div class="text">Enjoy seamless service with our convenient pickup and delivery options, tailored to your schedule</div></div>
+    <div class="desc"><img src="https://cdn-icons-png.flaticon.com/512/3588/3588395.png" alt="img4" style="border-radius: 50%; height: 100px; width: 100px; ;"><h3>Affordable Prices</h3><div class="text">Expenence exceptional care without breaking the bank-our affordable prices nuake laundry day stress-free.</div></div>
+    
+ </section>
+ <br><br>
+<!-- subscribe option-->
+
+<section class="subscribe">
+    <div class="sele" style="padding: 30px;"><h1>Subscribe our Newsletter</h1></div>
+    <div class="sele">
+        <form action="">
+            <input type="text" id="name" size="40"style="padding: 10px; height: 30px; width: 45%;" placeholder="Name">
+            <input type="email" id="email" size="40"style="padding: 10px;height: 30px;width: 45%;" placeholder="abc123@gmail.com">
+            <br><br><button  type="button" style="width: 98%; height: 50px; background-color: aquamarine; padding: 10px;" onclick="subscription()" >Subscribe</button>
+        </form>
+    </div>
+</section>
+<!-- footer section -->
+<footer class="footer">
+    <div class="box"><h1>Logo</h1><br><br><h3>About us</h3><div class="text" style="text-align: left;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam commodi possimus, quod quasi autem odit architecto provident consequuntur praesentium.</div></div>
+    <div class="box"><h3>Important Links</h3><div class="text" style="text-align: left;"><a href="#">About us</a> <br><a href="#">Contact us</a><br><a href="#">Privacy Policy</a><br><a href="#">Terms of use</a><br><a href="#">Refund Policy</a></div></div>
+    <div class="box"><h3>Contact</h3><div class="text" style="text-align: left;"><a href="#">dassayan29062005@gmail.com</a><br><a href="">+91 8420760791</a></div></div>
+    <div class="box"><h3>Follow Us</h3><div class="text" style="text-align: left;"><a href="#"><img src="image/fb.png" alt="" class="icon"></a><a href="#"><img src="image/insta.png" class="icon" alt=""></a><a href="#"><img src="image/x.png" alt="" class="icon"></a> <a href="#"><img src="image/utube.png" alt="" class="icon"></a></div></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+*{
+           
+                margin: 0;
+        }
+        
+        nav{
+            padding: 10px;
+            display: flex;
+            justify-content:space-around;
+            background-color: rgb(255, 255, 255);
+            height: 60px;
+            width: auto;
+        }
+        .hero{
+            margin: 0;
+            --blue:rgb(0, 110, 255);
+            display: grid;
+            justify-content: space-between;
+            width:100%;
+            min-height: 100vh;
+            box-sizing: border-box;
+            background-color: rgb(225, 255, 255);
+        }
+        .nav{
+            padding-top: 6px;
+        }
+        
+        .user{
+            padding-left: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 40px;
+            background-color:rgb(162, 240, 244);
+            border-radius: 5px;
+             font-size: larger;
+            font-weight: 900;
+            color: blue;
+            
+            transition:box-shadow 2s ;
+        }
+
+        .user:hover{
+            box-shadow: 3px 3px  blue;
+            cursor: pointer;
+        }
+        .logo{
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            font-size: 30px;
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+        
+        ul{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            font-size: 20px;
+
+        }
+        li{
+            list-style-type: none;
+            display: inline;
+            padding: 10px;
+             color: rgb(139, 139, 139);
+             border-bottom: 2px solid transparent; 
+             transition: border-bottom 1s ease-in;
+        }
+        li:hover {
+            border-bottom: 2px solid blue ;
+            cursor: pointer;
+        }
+        /* section css */
+        section{
+            
+            margin: 0px 80px 0px 80px;
+            display: flex;
+            justify-content: center;
+            
+        }
+        html,body{
+            margin: 0;
+        }
+        
+        .right{
+            padding: 20px;
+            width:auto;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        #bluhd{
+            font-size: 70px;
+            color: var(--blue);
+            --blue:rgb(0, 110, 255);
+        }
+        .left{
+            margin-left: 100px;
+            margin-right: 100px;
+            width: auto;
+        }
+        .button
+        {
+            padding: 15px 50px 15px 50px  ;
+            background-color: rgb(0, 110, 255);
+            border-radius: 15px;
+            cursor: pointer;
+            color: aliceblue;
+            font-size: 20px;
+            box-shadow: none;
+            transition: box-shadow 2s;
+            text-decoration: none;
+        }
+        .button:hover{
+            box-shadow: 3px 3px 3px  rgb(207, 207, 244)
+            
+        }
+        .tabtr{
+            border-bottom: 1px solid blue;
+        }
+        @media (max-width:700px) {
+           
+            section{
+        margin: 0 10px;
+        flex-direction: column;
+        align-items: stretch; 
+    }
+
+            .hero nav{
+                flex-direction: column;
+                justify-content: stretch;
+                align-items: center;
+                gap: 10px;
+                height: auto;
+                width: 100%;
+            }
+            .hero{
+                grid-template-rows: auto;
+                gap: 25px;
+            }
+            .left p{
+                width: 100%
+               
+            }
+            img{
+                
+                height: auto;
+            }
+             .left
+{
+    width: 100%;
+    margin: 0;
+}
+.hero section .right{
+    width: 100%;
+    margin: 0;
+}
+h1{
+        font-size: 30px !important;
+    }
+        }

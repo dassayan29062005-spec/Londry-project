@@ -1,0 +1,170 @@
+.conti{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(225, 255, 255);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px;
+    gap: 15px;
+}
+hr{
+    font-size: 30px;
+}
+/* service */
+.boxt{
+    border-radius: 30px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+   
+    height:580px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid black; */
+}
+section{
+    margin: 0;
+    
+}
+.line{
+    font-size: 19px;
+}
+.serv{
+    display: grid;
+    padding: 3px;
+    font-size:larger ;
+    height: fit-content;
+    gap: 20px;
+}
+    
+.ops{
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+}
+
+.cartbtn{
+    padding: 5px;
+    background-color: lightgreen ;
+    transition: box-shadow 1s ease;
+}
+.cartbtn:hover{
+            box-shadow: 3px 3px 3px  rgb(90, 111, 249)
+            
+        }
+/* right box */
+.calc{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 85vh;
+    gap: 15px;
+justify-content:space-between;
+
+
+}
+.item{
+    background-color: rgb(255, 255, 255);
+    
+    
+    border-radius: 30px;
+    
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+}
+/* table */
+table{
+    border-collapse: collapse;
+    border: none;
+}
+.item table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgb(194, 247, 230);
+  table-layout:fixed;
+
+  /* it divides table column by seeing width */
+}
+
+.item th, .item td {
+  padding: 4px;
+  border: 1px solid #a2d2bc;
+  text-align: left;
+  
+}
+
+.item th {
+  background-color: rgb(150, 230, 200);
+  font-weight: bold;
+ 
+}
+/* booking portion  */
+.book{
+    background-color: rgb(255, 255, 255);
+   
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+   padding: 10px;
+    border-radius: 30px;
+}
+/* form */
+.name,.email,.ph{
+    padding: 10px;
+    width: 100%;
+}
+#fn{
+    grid-column: 1/3;
+}
+.form{
+display: grid;
+  column-gap: 29px;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  width: 90%;
+}
+.ops{
+    display: flex;
+}
+.tbody {
+    display: block;
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+.thead tr,.tbody tr{
+    display: table;
+    width: 99%;
+    table-layout: fixed;
+    border: none;
+}
+/* book button */
+.bookbtn{
+    width: 100%;
+    background-color: rgb(0, 110, 255);
+    padding: 20px;
+    border-radius: 10px;
+    grid-column:1/3;
+}
+@media (max-width:700px) {
+    .conti{
+        grid-template-columns: 1fr;
+        padding: 0px;
+        height: fit-content;
+    }
+    .serv{
+        height: fit-content;
+        padding: 0%;
+    }
+    
+}
